@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <title>字典字卡</title>
-  <style>
-    .flashcard {
-      border: 1px solid #ddd;
-      padding: 10px;
-      margin-bottom: 10px;
-      width: 300px;
-      font-size: 14pt;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互動式履歷</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <input type="text" id="wordInput" placeholder="輸入單字">
-  <button id="searchButton">搜尋</button>
-  <div id="results"></div>
-  <script src="popup.js"></script>
+    <div class="container">
+        <button id="introduceButton">認識我</button>
+        <div id="info" class="hidden">
+            <h1>您的名字</h1>
+            <button class="optionButton" id="educationButton">我的學歷</button>
+            <button class="optionButton" id="experienceButton">我的工作經歷</button>
+            <button class="optionButton" id="skillsButton">我的專長</button>
+        </div>
+        <div id="details" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
