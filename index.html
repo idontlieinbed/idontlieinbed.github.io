@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="UTF-8">
+  <title>字典字卡</title>
+  <style>
+    .flashcard {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 300px;
+      font-size: 14pt;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <input type="text" id="wordInput" placeholder="輸入單字">
+  <button id="searchButton">搜尋</button>
+  <div id="results"></div>
+  <script src="popup.js"></script>
 </body>
 </html>
